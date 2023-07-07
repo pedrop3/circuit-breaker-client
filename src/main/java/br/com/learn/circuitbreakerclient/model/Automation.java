@@ -8,8 +8,8 @@ import lombok.Data;
 public class Automation {
 
     private Long id;
-	private Integer dias;
-	private String descricao;
+	private Integer days;
+	private String description;
 	private Long patientId;
 
 }

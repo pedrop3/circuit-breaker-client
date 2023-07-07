@@ -8,16 +8,16 @@ import lombok.Data;
 @AllArgsConstructor
 public class AutomationResponse {
 
+    private Long id;
+	private Integer days;
+	private String description;
+
     public static AutomationResponse of(Automation automation) {
         return new AutomationResponse(
             automation.getId(),
-            automation.getDias(),
-            automation.getDescricao()
+            automation.getDays(),
+            automation.getDescription()
         );
     }
   
-    private Long id;
-	private Integer dias;
-	private String descricao;
-
 }
